@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">e
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamaljith - Music Creator & Founder of Skela Media Works</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+        
         * {
             margin: 0;
             padding: 0;
@@ -123,8 +123,7 @@
 
         .logo {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -133,35 +132,11 @@
             transform: scale(1.05);
         }
 
-         .logo-main {
-            width: 300px; /* width of your image */
-            height: 100px; /* height of your image */
-            background-image: url('https://fontmeme.com/permalink/250729/3e68ebf1e6bc3831b7f98084d288a69f.png');
-            background-repeat: no-repeat;
-            background-size: contain; /* adjust to fit container */
-            background-position: center;
-            font-family: 'Pacifico', cursive; /* Google handbrush font */  /* Ramidots font */
-            font-size: 3.6rem;
-            font-weight: normal; 
-            font-style: normal;  
-            color: black; /* Solid black text color */
-            letter-spacing: -0.05em;
-            line-height: 1;
-            background: none; /* Remove gradient background */
-            -webkit-background-clip: unset; /* Remove text background clip */
-            -webkit-text-fill-color: unset; /* Remove transparent fill */
-            background-clip: unset; /* Remove text background clip */
-            text-indent: -9999px; /* pushes text out of view */
-        }
-
-        .logo-sub {
-            font-size: 0.65rem;
-            font-weight: 500;
-            color: var(--medium-gray);
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-top: -0.1rem;
-            opacity: 0.8;
+        .logo-image {
+            height: 50px;
+            width: auto;
+            max-width: 200px;
+            object-fit: contain;
         }
 
         .nav-menu {
@@ -463,7 +438,7 @@
 
         .work-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2.5rem;
             margin-top: 4rem;
         }
@@ -566,8 +541,8 @@
 
         .workshop-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
             margin-top: 4rem;
         }
 
@@ -826,6 +801,10 @@
                 display: flex;
             }
 
+            .logo-image {
+                height: 40px;
+            }
+
             .hero {
                 min-height: 90vh;
                 padding-top: calc(var(--header-height) + 2rem);
@@ -926,8 +905,7 @@
     <header id="header">
         <nav class="container">
             <div class="logo">
-                <div class="logo-main">𝑀𝒮𝒦</div>
-                <div class="logo-sub"> </div>
+                <img src="https://fontmeme.com/permalink/250729/909a749933ec20e0ee45f0a91ec2ab60.png" alt="Kamaljith" class="logo-image">
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
@@ -958,7 +936,7 @@
         <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Crafting Sound. Creating Soulful Experiences.</h1>
+                    <h1>Crafting Sound. Creating Experiences.</h1>
                     <p class="subtitle">Hi, I'm Kamaljith — music creator, producer & founder of Skela Media Works.</p>
                     <div class="hero-cta">
                         <a href="#work" class="btn btn-primary">Explore Work</a>
@@ -1142,7 +1120,7 @@
                         From music production and sound design to visual storytelling and creative direction, our workshops and collaborative projects create spaces where artists can grow, connect, and inspire each other.
                     </p>
                     <div style="margin-top: 3rem;">
-                        <a href="https://mythunder-world.github.io/untitled/#home" class="btn btn-primary" style="margin-right: 1rem;">Visit Skela Media</a>
+                        <a href="#" class="btn btn-primary" style="margin-right: 1rem;">Visit Skela Media</a>
                         <a href="#workshops" class="btn btn-outline">Join Community</a>
                     </div>
                 </div>
@@ -1180,13 +1158,12 @@
         <div class="container">
             <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
                 <div class="logo">
-                    <div class="logo-main" style="font-size: 1.5rem;">KAMALJITH</div>
-                    <div class="logo-sub"> </div>
+                    <img src="https://fontmeme.com/permalink/250729/909a749933ec20e0ee45f0a91ec2ab60.png" alt="Kamaljith" style="height: 30px; width: auto;">
                 </div>
                 <div style="font-size: 2rem; color: var(--medium-gray);">×</div>
                 <div class="logo">
-                    <div class="logo-main" style="font-size: 1.5rem;">SKELA</div>
-                    <div class="logo-sub">media works</div>
+                    <div class="logo-main" style="font-size: 1.5rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800;">SKELA</div>
+                    <div class="logo-sub" style="font-size: 0.65rem; font-weight: 500; color: var(--medium-gray); letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8;">media works</div>
                 </div>
             </div>
             <p style="color: var(--medium-gray); font-size: 0.9rem;">
