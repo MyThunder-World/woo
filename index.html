@@ -133,15 +133,18 @@
             transform: scale(1.05);
         }
 
-        .logo-main {
+         .logo-main {
+            font-family: 'Poppins', sans-serif; /* Custom font */
             font-size: 1.8rem;
             font-weight: 800;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-style: italic;
+            color: black; /* Solid black text color */
             letter-spacing: -0.05em;
             line-height: 1;
+            background: none; /* Remove gradient background */
+            -webkit-background-clip: unset; /* Remove text background clip */
+            -webkit-text-fill-color: unset; /* Remove transparent fill */
+            background-clip: unset; /* Remove text background clip */
         }
 
         .logo-sub {
